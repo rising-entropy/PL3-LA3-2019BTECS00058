@@ -144,6 +144,4 @@ const leaveSubmit = (e) => {
     alert("Applied Successfully!");
     window.location = "/leaveForm.html";
 
-
-
 }
