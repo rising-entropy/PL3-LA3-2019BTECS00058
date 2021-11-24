@@ -38,9 +38,75 @@
       </nav>
 
 
+<!-- date, reason, department, replacement faculty, approver (HOD or Director)\-->
 
+      <div class="container container-fluid align-middle" style="height: auto;">
+        <section>
+            <div class="container py-5 h-100">
+              <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                  <div class="card shadow-2-strong" style="border-radius: 1rem;">
+                    <div class="card-body p-5 text-center">
+          
+                      <h3 class="mb-5">Leave Form</h3>
 
+                      <form onsubmit="leaveSubmit(event)" id="leave">
 
+                        <div class="form-outline mb-4 text-left">
+                            <label class="form-label" for="typeEmailX-2" style="margin-left: 5%;">Date</label>
+                            <input type="date" id="typeEmailX-2" class="form-control form-control-lg repDate" />
+                            <div class="invalid-feedback">
+                                Date can't be empty
+                              </div>
+                        </div>
+
+                        <div class="form-outline mb-4 text-left">
+                            <label class="form-label" for="typeEmailX-2" style="margin-left: 5%;">Reason</label>
+                            <input type="text" id="typeEmailX-2" class="form-control form-control-lg repReason" />
+                            <div class="invalid-feedback">
+                                Reason can't be empty
+                              </div>
+                        </div>
+
+                        <div class="form-outline mb-4 text-left">
+                            <label class="form-label" for="typeEmailX-2" style="margin-left: 5%;">Replacement Faculty</label>
+                            <input type="text" id="typeEmailX-2" class="form-control form-control-lg repFac" />
+                            <div class="invalid-feedback">
+                                Replacement Faculty can't be empty
+                              </div>
+                          </div>
+          
+
+                      <div class="form-outline mb-4 text-left">
+                        <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Department</label>
+                        <select class="custom-select my-1 mr-sm-2 redDept form-control form-control-lg" id="inlineFormCustomSelectPref">
+                          <option value="1">CSE</option>
+                          <option value="2">IT</option>
+                          <option value="3">Electronics</option>
+                          <option value="4">Electrical</option>
+                          <option value="5">Mechanical</option>
+                          <option value="6">Civil</option>
+                        </select>
+                    </div>
+
+                    <div class="form-outline mb-4 text-left">
+                        <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Approver</label>
+                        <select class="custom-select my-1 mr-sm-2 redFacType form-control form-control-lg" id="inlineFormCustomSelectPref">
+                          <option value="1">HoD</option>
+                          <option value="2">Director</option>
+                        </select>
+                    </div>
+                    
+                      <button class="btn btn-primary btn-lg btn-block" style="margin-top: 50px;" type="submit">Apply</button>
+                    </form>
+          
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+      </div>
 
 
 

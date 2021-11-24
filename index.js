@@ -103,3 +103,47 @@ const registerSubmit = e =>{
 
     
 };
+
+const leaveSubmit = (e) => {
+    e.preventDefault();
+
+    let date = $(".repDate").val();
+    let reason = $(".repReason").val();
+    let replacement = $(".repFac").val();
+
+    if(date.length < 1)
+    {
+        $(".repDate").addClass("is-invalid");
+        return;
+    }
+    else
+    {
+        $(".repDate").removeClass("is-invalid");
+    }
+
+    if(reason.length < 1)
+    {
+        $(".repReason").addClass("is-invalid");
+        return;
+    }
+    else
+    {
+        $(".repReason").removeClass("is-invalid");
+    }
+
+    if(replacement.length < 1)
+    {
+        $(".repFac").addClass("is-invalid");
+        return;
+    }
+    else
+    {
+        $(".repFac").removeClass("is-invalid");
+    }
+
+    alert("Applied Successfully!");
+    window.location = "/leaveForm.html";
+
+
+
+}
